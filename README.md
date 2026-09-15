@@ -102,7 +102,7 @@ caching, placeholders and the activity lifecycle. Circle/rounded clipping is
 done with outline providers — so **placeholders and error images get clipped
 too**, not just the downloaded bitmap.
 
-![UrlImageView](docs/screenshots/url_image.png)
+<p align="center"><img src="docs/screenshots/url_image.png" width="320" alt="UrlImageView"/></p>
 
 ```xml
 <com.github.simpleviews.UrlImageView
@@ -141,7 +141,7 @@ Notes:
 A circular avatar with an optional border ring. Shows a friendly person
 placeholder until a URL is set, so empty profiles never look broken.
 
-![AvatarView](docs/screenshots/avatar.png)
+<p align="center"><img src="docs/screenshots/avatar.png" width="320" alt="AvatarView"/></p>
 
 ```xml
 <com.github.simpleviews.AvatarView
@@ -171,7 +171,7 @@ Everything a rounded button needs, with zero drawable XML: fill, stroke,
 corner radius, ripple — plus a **loading state** that swaps the label for a
 spinner and swallows taps while your network call runs.
 
-![SimpleButton](docs/screenshots/button.png)
+<p align="center"><img src="docs/screenshots/button.png" width="320" alt="SimpleButton"/></p>
 
 ```xml
 <com.github.simpleviews.SimpleButton
@@ -206,7 +206,7 @@ Notes:
 - `loading = true` saves the label, hides it, spins a painted arc, and makes
   `performClick()` a no-op. The state survives rotation.
 
-![SimpleButton loading](docs/screenshots/button_loading.png)
+<p align="center"><img src="docs/screenshots/button_loading.png" width="320" alt="SimpleButton loading"/></p>
 
 ### PasswordEditText
 
@@ -214,7 +214,7 @@ A password field with the show/hide eye built in. The cursor position survives
 the input-type switch, and the visibility state survives rotation. No
 TextInputLayout, no Material dependency.
 
-![PasswordEditText](docs/screenshots/password.png)
+<p align="center"><img src="docs/screenshots/password.png" width="320" alt="PasswordEditText"/></p>
 
 ```xml
 <com.github.simpleviews.PasswordEditText
@@ -234,7 +234,7 @@ works normally.
 
 Declarative validation rules in XML; one call to check and show an error.
 
-![ValidatingEditText](docs/screenshots/validation.png)
+<p align="center"><img src="docs/screenshots/validation.png" width="320" alt="ValidatingEditText"/></p>
 
 ```xml
 <com.github.simpleviews.ValidatingEditText
@@ -273,7 +273,7 @@ Notes:
 A rounded, elevatable, borderable container whose children are clipped to the
 corners. All framework drawing — no CardView, no Material.
 
-![SimpleCard](docs/screenshots/card.png)
+<p align="center"><img src="docs/screenshots/card.png" width="320" alt="SimpleCard"/></p>
 
 ```xml
 <com.github.simpleviews.SimpleCard
@@ -301,7 +301,7 @@ corners. All framework drawing — no CardView, no Material.
 A colored one-line message bar: info, success, warning or error, optionally
 dismissible.
 
-![BannerView](docs/screenshots/banner.png)
+<p align="center"><img src="docs/screenshots/banner.png" width="320" alt="BannerView"/></p>
 
 ```xml
 <com.github.simpleviews.BannerView
@@ -330,7 +330,7 @@ Colors are fixed pastel pairs (theme-independent by design).
 The classic "nothing here" screen: icon, title, message and optional button,
 centered and padded.
 
-![EmptyStateView](docs/screenshots/empty_state.png)
+<p align="center"><img src="docs/screenshots/empty_state.png" width="320" alt="EmptyStateView"/></p>
 
 ```xml
 <com.github.simpleviews.EmptyStateView
@@ -357,7 +357,7 @@ emptyState.onButtonClickListener = { openCatalog() }
 
 A FrameLayout that centers its children. No `layout_gravity` needed.
 
-![CenterLayout](docs/screenshots/center.png)
+<p align="center"><img src="docs/screenshots/center.png" width="320" alt="CenterLayout"/></p>
 
 ```xml
 <com.github.simpleviews.CenterLayout
@@ -405,7 +405,7 @@ The vertical stack this library exists for: **children are normalized** to
 full-width, wrap-height, with a uniform gap. No `layout_width`, no
 `layout_height`, no margins — the two most annoying XML chores, gone.
 
-![VStack](docs/screenshots/vstack.png)
+<p align="center"><img src="docs/screenshots/vstack.png" width="320" alt="VStack"/></p>
 
 ```xml
 <com.github.simpleviews.VStack
@@ -444,7 +444,7 @@ vstack.spacing(12)               // change the gap from code
 The horizontal sibling: children normalized to wrap/wrap with a uniform gap,
 or stretched to equal widths.
 
-![HStack](docs/screenshots/hstack.png)
+<p align="center"><img src="docs/screenshots/hstack.png" width="320" alt="HStack"/></p>
 
 ```xml
 <com.github.simpleviews.HStack
@@ -471,7 +471,7 @@ A scrollable VStack. Children are declared directly on it and routed to the
 internal stack — which makes the infamous *"ScrollView can host only one
 direct child"* crash impossible.
 
-![ScrollVStack](docs/screenshots/scrollvstack.png)
+<p align="center"><img src="docs/screenshots/scrollvstack.png" width="320" alt="ScrollVStack"/></p>
 
 ```xml
 <com.github.simpleviews.ScrollVStack
@@ -501,7 +501,7 @@ attributes. They cover the screens every tutorial app ends up hand-building.
 Web image on top, caption under it, centered and padded — with an optional
 button. The "image + caption" screen in one tag.
 
-![ImagePage](docs/screenshots/image_page.png)
+<p align="center"><img src="docs/screenshots/image_page.png" width="320" alt="ImagePage"/></p>
 
 ```xml
 <com.github.simpleviews.ImagePage
@@ -533,7 +533,7 @@ page.setCaption("Updated caption")
 Splash / onboarding screen: big title, subtitle, optional button, vertically
 centered.
 
-![TitlePage](docs/screenshots/title_page.png)
+<p align="center"><img src="docs/screenshots/title_page.png" width="320" alt="TitlePage"/></p>
 
 ```xml
 <com.github.simpleviews.TitlePage
@@ -558,7 +558,7 @@ titlePage.onButtonClick = { startActivity<NextActivity>() }
 
 Avatar + name + subtitle + optional right-side action link.
 
-![ProfileHeader](docs/screenshots/profile.png)
+<p align="center"><img src="docs/screenshots/profile.png" width="320" alt="ProfileHeader"/></p>
 
 ```xml
 <com.github.simpleviews.ProfileHeader
@@ -587,7 +587,7 @@ The settings-row workhorse: icon (resource *or* URL), title, optional
 subtitle, optional right-side value, chevron, full-width ripple and optional
 divider.
 
-![ListItemView](docs/screenshots/listitem.png)
+<p align="center"><img src="docs/screenshots/listitem.png" width="320" alt="ListItemView"/></p>
 
 ```xml
 <com.github.simpleviews.ListItemView
@@ -617,7 +617,7 @@ row.setOnClickListener { openNotifications() }
 
 A small uppercase section label with an optional right-side action link.
 
-![SectionHeader](docs/screenshots/keyvalue.png)
+<p align="center"><img src="docs/screenshots/keyvalue.png" width="320" alt="SectionHeader"/></p>
 
 ```xml
 <com.github.simpleviews.SectionHeader
@@ -640,7 +640,7 @@ sectionHeader.onActionClick = { showAll() }
 
 Label left, bold value right — the detail-screen row.
 
-![KeyValueRow](docs/screenshots/keyvalue.png)
+<p align="center"><img src="docs/screenshots/keyvalue.png" width="320" alt="KeyValueRow"/></p>
 
 ```xml
 <com.github.simpleviews.KeyValueRow
@@ -665,7 +665,7 @@ Your content plus a full-width button pinned to the bottom — the login /
 onboarding pattern without nested ScrollViews. Anything declared inside the
 tag becomes the content area.
 
-![BottomActionBar](docs/screenshots/bottombar.png)
+<p align="center"><img src="docs/screenshots/bottombar.png" width="320" alt="BottomActionBar"/></p>
 
 ```xml
 <com.github.simpleviews.BottomActionBar
@@ -698,7 +698,7 @@ The RecyclerView complexity bomb, defused. No adapter, no ViewHolder, no
 LayoutManager, no DiffUtil — just data in, rows out. Pull-to-refresh and empty
 states are attributes.
 
-![SimpleList](docs/screenshots/simplelist.png)
+<p align="center"><img src="docs/screenshots/simplelist.png" width="320" alt="SimpleList"/></p>
 
 ```xml
 <com.github.simpleviews.SimpleList
@@ -768,7 +768,7 @@ Notes:
 
 Rich text from XML, links included and clickable.
 
-![HtmlTextView](docs/screenshots/html.png)
+<p align="center"><img src="docs/screenshots/html.png" width="320" alt="HtmlTextView"/></p>
 
 ```xml
 <com.github.simpleviews.HtmlTextView
@@ -789,7 +789,7 @@ textView.setHtml("<b>Hello</b>")
 
 A WebView that loads its URL from XML, JavaScript on by default.
 
-![SimpleWebView](docs/screenshots/webview.png)
+<p align="center"><img src="docs/screenshots/webview.png" width="320" alt="SimpleWebView"/></p>
 
 ```xml
 <com.github.simpleviews.SimpleWebView
