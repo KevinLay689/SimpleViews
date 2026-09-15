@@ -12,9 +12,9 @@
         app:svSpacing="16dp">
 
         <com.github.simpleviews.SimpleButton
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Default — theme accent, 12dp corners" />
+            android:text="Default button" />
 
         <com.github.simpleviews.SimpleButton
             android:layout_width="match_parent"

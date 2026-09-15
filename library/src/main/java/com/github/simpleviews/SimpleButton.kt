@@ -10,6 +10,8 @@ import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
 import android.util.AttributeSet
+import android.util.TypedValue
+import android.view.Gravity
 import android.view.View
 import android.view.animation.LinearInterpolator
 import androidx.appcompat.widget.AppCompatButton
@@ -97,6 +99,31 @@ class SimpleButton @JvmOverloads constructor(
         val capsSpecified = caps.hasValue(0)
         caps.recycle()
         if (!capsSpecified) transformationMethod = null
+
+        // Custom views do not receive the framework buttonStyle, so the
+        // standard button look (centered 14sp text, comfortable padding,
+        // 48dp touch target) must be applied here. Anything the caller set
+        // in XML wins.
+        val common = context.obtainStyledAttributes(
+            attrs,
+            intArrayOf(
+                android.R.attr.padding, android.R.attr.paddingLeft, android.R.attr.paddingTop,
+                android.R.attr.textSize, android.R.attr.gravity,
+            ),
+        )
+        val paddingSpecified = common.hasValue(0) || common.hasValue(1) || common.hasValue(2)
+        val textSizeSpecified = common.hasValue(3)
+        val gravitySpecified = common.hasValue(4)
+        common.recycle()
+
+        if (!paddingSpecified) {
+            val h = context.dp(16)
+            val v = context.dp(10)
+            setPadding(h, v, h, v)
+        }
+        if (!textSizeSpecified) setTextSize(TypedValue.COMPLEX_UNIT_SP, 14f)
+        if (!gravitySpecified) gravity = Gravity.CENTER
+        minimumHeight = maxOf(minimumHeight, context.dp(48))
 
         applyBackground()
     }
