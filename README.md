@@ -35,7 +35,7 @@ dependencyResolutionManagement {
 
 ```kotlin
 dependencies {
-    implementation("com.github.<your-github-username>:SimpleViews:1.0.0")
+    implementation("com.github.KevinLay689:SimpleViews:1.0.0")
 }
 ```
 
@@ -882,7 +882,7 @@ project in Android Studio and run it.
 2. Push to GitHub and create a release tag (e.g. `1.0.0`). JitPack builds it
    on demand — `jitpack.yml` pins JDK 17 (required by AGP 8) and installs the
    compile SDK platform.
-3. Check the build at https://jitpack.io/#<user>/<repo>.
+3. Check the build at https://jitpack.io/#KevinLay689/SimpleViews.
 
 ## License
 
