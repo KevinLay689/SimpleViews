@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.BottomActionBar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomBar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svButtonText="Continue">
+
+    <com.github.simpleviews.ScrollVStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:svSpacing="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BottomActionBar"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Everything you put inside the tag becomes the content area; the button is pinned below it. This is the login / onboarding pattern, minus the nesting." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 5 — scroll me" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 6" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Line 7" />
+    </com.github.simpleviews.ScrollVStack>
+</com.github.simpleviews.BottomActionBar>

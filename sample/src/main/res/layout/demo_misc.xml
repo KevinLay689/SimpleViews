@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:svSpacing="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HtmlTextView — app:svHtml"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.HtmlTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svHtml="&lt;b&gt;Bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt; and a clickable &lt;a href=&quot;https://example.com&quot;&gt;link&lt;/a&gt;." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleWebView — app:svUrl"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleWebView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:svExactSize="true"
+            app:svUrl="https://example.com" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

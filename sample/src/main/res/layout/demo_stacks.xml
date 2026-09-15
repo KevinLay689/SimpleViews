@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.ScrollVStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:svSpacing="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VStack inside SimpleCard — children declare nothing"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleCard
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svCornerRadius="16dp"
+            app:svElevation="2dp">
+
+            <com.github.simpleviews.VStack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:svSpacing="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card title"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No layout_width, no layout_height, no margins — the VStack normalizes every child." />
+            </com.github.simpleviews.VStack>
+        </com.github.simpleviews.SimpleCard>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HStack spread — equal widths"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.HStack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svDistribute="spread"
+            app:svSpacing="8dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OK" />
+        </com.github.simpleviews.HStack>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TitlePage inside a card"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleCard
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            app:svExactSize="true"
+            app:svCornerRadius="16dp"
+            app:svFillColor="#F3EDFF">
+
+            <com.github.simpleviews.TitlePage
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:svTitle="TitlePage"
+                app:svSubtitle="A whole welcome screen in one tag"
+                app:svButtonText="Get started" />
+        </com.github.simpleviews.SimpleCard>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CenterLayout + BannerView + KeyValueRow"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleCard
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            app:svExactSize="true"
+            app:svCornerRadius="16dp">
+
+            <com.github.simpleviews.CenterLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.github.simpleviews.CenterLayout>
+        </com.github.simpleviews.SimpleCard>
+
+        <com.github.simpleviews.BannerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svDismissible="true"
+            app:svMessage="Your trial ends in 3 days"
+            app:svSeverity="warning" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Order total"
+            app:svValue="$42.00" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Tax"
+            app:svValue="$3.20" />
+
+        <com.github.simpleviews.HtmlTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svHtml="&lt;b&gt;HtmlTextView:&lt;/b&gt; &lt;i&gt;rich text&lt;/i&gt; from XML, with a &lt;a href=&quot;https://example.com&quot;&gt;link&lt;/a&gt;." />
+    </com.github.simpleviews.ScrollVStack>
+</com.github.simpleviews.SafeLayout>

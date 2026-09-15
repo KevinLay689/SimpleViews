@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        app:svSpacing="12dp">
+
+        <com.github.simpleviews.BannerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svMessage="Info: a new version is available"
+            app:svSeverity="info" />
+
+        <com.github.simpleviews.BannerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svMessage="Success: your changes were saved"
+            app:svSeverity="success" />
+
+        <com.github.simpleviews.BannerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svDismissible="true"
+            app:svMessage="Warning: your trial ends in 3 days"
+            app:svSeverity="warning" />
+
+        <com.github.simpleviews.BannerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svMessage="Error: payment failed"
+            app:svSeverity="error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BannerView — app:svSeverity info / success / warning / error, optional ✕ dismiss"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

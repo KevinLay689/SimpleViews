@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ======================================================================
+         All custom attributes are prefixed with `sv` to avoid resource-merging
+         collisions with other libraries (Material Components declares generic
+         names like `title`, `strokeWidth`, `cornerRadius` — same name with a
+         different format would break consumers' builds).
+         ====================================================================== -->
+
+    <!-- Shared attributes, declared once and referenced by the styleables below -->
+    <attr name="svSpacing" format="dimension" />
+    <attr name="svTitle" format="string" />
+    <attr name="svSubtitle" format="string" />
+    <attr name="svMessage" format="string" />
+    <attr name="svText" format="string" />
+    <attr name="svButtonText" format="string" />
+    <attr name="svCornerRadius" format="dimension" />
+    <attr name="svFillColor" format="color|reference" />
+    <attr name="svPressedColor" format="color|reference" />
+    <attr name="svStrokeColor" format="color|reference" />
+    <attr name="svStrokeWidth" format="dimension" />
+    <attr name="svValue" format="string" />
+    <attr name="svActionText" format="string" />
+    <attr name="svDivider" format="boolean" />
+    <attr name="svExactSize" format="boolean" />
+    <attr name="svIcon" format="reference" />
+
+    <attr name="svSeverity" format="enum">
+        <enum name="info" value="0" />
+        <enum name="success" value="1" />
+        <enum name="warning" value="2" />
+        <enum name="error" value="3" />
+    </attr>
+
+    <attr name="svFitSystemBars" format="enum">
+        <enum name="none" value="0" />
+        <enum name="top" value="1" />
+        <enum name="bottom" value="2" />
+        <enum name="both" value="3" />
+    </attr>
+
+    <attr name="svOrientation" format="enum">
+        <enum name="vertical" value="0" />
+        <enum name="horizontal" value="1" />
+    </attr>
+
+    <attr name="svDistribute" format="enum">
+        <enum name="packed" value="0" />
+        <enum name="spread" value="1" />
+    </attr>
+
+    <attr name="svValidate" format="flags">
+        <flag name="none" value="0" />
+        <flag name="required" value="1" />
+        <flag name="email" value="2" />
+        <flag name="phone" value="4" />
+        <flag name="number" value="8" />
+    </attr>
+
+    <declare-styleable name="UrlImageView">
+        <attr name="svLoad" format="string" />
+        <attr name="svPlaceholder" format="reference" />
+        <attr name="svError" format="reference" />
+        <attr name="svCircle" format="boolean" />
+        <attr name="svRounded" format="dimension" />
+        <attr name="svAlt" format="string" />
+        <attr name="svCrossfade" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AvatarView">
+        <attr name="svBorderWidth" format="dimension" />
+        <attr name="svBorderColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleButton">
+        <attr name="svCornerRadius" />
+        <attr name="svFillColor" />
+        <attr name="svPressedColor" />
+        <attr name="svStrokeColor" />
+        <attr name="svStrokeWidth" />
+    </declare-styleable>
+
+    <declare-styleable name="ValidatingEditText">
+        <attr name="svValidate" />
+        <attr name="svMinLength" format="integer" />
+        <attr name="svErrorMessage" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleCard">
+        <attr name="svCornerRadius" />
+        <attr name="svFillColor" />
+        <attr name="svStrokeColor" />
+        <attr name="svStrokeWidth" />
+        <attr name="svElevation" format="dimension" />
+        <attr name="svRipple" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleWebView">
+        <attr name="svUrl" format="string" />
+        <attr name="svJavaScriptEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HtmlTextView">
+        <attr name="svHtml" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerView">
+        <attr name="svSeverity" />
+        <attr name="svMessage" />
+        <attr name="svDismissible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyStateView">
+        <attr name="svIcon" />
+        <attr name="svTitle" />
+        <attr name="svMessage" />
+        <attr name="svButtonText" />
+    </declare-styleable>
+
+    <declare-styleable name="VStack">
+        <attr name="svSpacing" />
+    </declare-styleable>
+
+    <declare-styleable name="HStack">
+        <attr name="svSpacing" />
+        <attr name="svDistribute" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollVStack">
+        <attr name="svSpacing" />
+        <attr name="svFillViewport" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CenterLayout">
+        <attr name="svCenterVerticalOnly" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SafeLayout">
+        <attr name="svFitSystemBars" />
+    </declare-styleable>
+
+    <!-- Attributes read by stacks on their CHILDREN -->
+    <declare-styleable name="StackChild">
+        <attr name="svExactSize" />
+    </declare-styleable>
+
+    <declare-styleable name="ImagePage">
+        <attr name="svImageUrl" format="string" />
+        <attr name="svText" />
+        <attr name="svImageHeight" format="dimension" />
+        <attr name="svImageCornerRadius" format="dimension" />
+        <attr name="svPadding" format="dimension" />
+        <attr name="svCentered" format="boolean" />
+        <attr name="svButtonText" />
+    </declare-styleable>
+
+    <declare-styleable name="TitlePage">
+        <attr name="svTitle" />
+        <attr name="svSubtitle" />
+        <attr name="svButtonText" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileHeader">
+        <attr name="svAvatarUrl" format="string" />
+        <attr name="svName" format="string" />
+        <attr name="svSubtitle" />
+        <attr name="svActionText" />
+    </declare-styleable>
+
+    <declare-styleable name="ListItemView">
+        <attr name="svTitle" />
+        <attr name="svSubtitle" />
+        <attr name="svIcon" />
+        <attr name="svIconUrl" format="string" />
+        <attr name="svValue" />
+        <attr name="svChevron" format="boolean" />
+        <attr name="svDivider" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionHeader">
+        <attr name="svTitle" />
+        <attr name="svActionText" />
+    </declare-styleable>
+
+    <declare-styleable name="KeyValueRow">
+        <attr name="svLabel" format="string" />
+        <attr name="svValue" />
+    </declare-styleable>
+
+    <declare-styleable name="BottomActionBar">
+        <attr name="svButtonText" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleList">
+        <attr name="svItemLayout" format="reference" />
+        <attr name="svEmptyText" />
+        <attr name="svDivider" />
+        <attr name="svPullToRefresh" format="boolean" />
+        <attr name="svOrientation" />
+        <attr name="svColumns" format="integer" />
+        <attr name="svItemSpacing" format="dimension" />
+    </declare-styleable>
+</resources>

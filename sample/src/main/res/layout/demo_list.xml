@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:svSpacing="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleList — pull down to refresh"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleList
+            android:id="@+id/linearList"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:svExactSize="true"
+            app:svDivider="true"
+            app:svEmptyText="No items — tap Clear to bring them back"
+            app:svItemLayout="@layout/row_person"
+            app:svPullToRefresh="true" />
+
+        <com.github.simpleviews.SimpleButton
+            android:id="@+id/clearButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear / restore list"
+            app:svCornerRadius="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grid — app:svColumns"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleList
+            android:id="@+id/gridList"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            app:svExactSize="true"
+            app:svColumns="2"
+            app:svItemLayout="@layout/row_person"
+            app:svItemSpacing="8dp" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

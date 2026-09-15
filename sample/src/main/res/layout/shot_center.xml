@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        app:svSpacing="16dp">
+
+        <com.github.simpleviews.SimpleCard
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:svExactSize="true"
+            app:svCornerRadius="16dp"
+            app:svFillColor="#EEF3FF">
+
+            <com.github.simpleviews.CenterLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </com.github.simpleviews.CenterLayout>
+        </com.github.simpleviews.SimpleCard>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CenterLayout — centers its children (svCenterVerticalOnly for vertical-only)"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

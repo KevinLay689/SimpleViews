@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        app:svSpacing="12dp">
+
+        <com.github.simpleviews.SimpleCard
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svCornerRadius="16dp">
+
+            <com.github.simpleviews.VStack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:svSpacing="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VStack title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Every child is full-width and wrap-height." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Uniform app:svSpacing gaps." />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No margins, ever." />
+            </com.github.simpleviews.VStack>
+        </com.github.simpleviews.SimpleCard>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VStack — children declare no width/height/margins; app:svSpacing handles gaps"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        app:svSpacing="20dp">
+
+        <com.github.simpleviews.HStack
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svSpacing="24dp">
+
+            <com.github.simpleviews.AvatarView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:svExactSize="true"
+                app:svLoad="https://i.pravatar.cc/300?img=5"
+                app:svBorderWidth="3dp"
+                app:svBorderColor="#6200EE" />
+
+            <com.github.simpleviews.AvatarView
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                app:svExactSize="true"
+                app:svBorderWidth="2dp"
+                app:svBorderColor="#DDDDDD" />
+        </com.github.simpleviews.HStack>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AvatarView — with app:svLoadUrl image and with the built-in person placeholder; app:svBorderWidth ring"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

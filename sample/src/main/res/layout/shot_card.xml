@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        app:svSpacing="16dp">
+
+        <com.github.simpleviews.SimpleCard
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svCornerRadius="16dp"
+            app:svElevation="4dp">
+
+            <com.github.simpleviews.VStack
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:svSpacing="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SimpleCard"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rounded corners, elevation and optional strokes — no CardView, no Material. Children are clipped to the corners." />
+            </com.github.simpleviews.VStack>
+        </com.github.simpleviews.SimpleCard>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleCard — svCornerRadius, svElevation, svStrokeColor, svFillColor, svRipple"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

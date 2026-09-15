@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Needed by UrlImageView/ImagePage/SimpleWebView demos -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="SimpleViews Demo"
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:theme="@style/Theme.SimpleViews"
+        android:supportsRtl="true"
+        android:allowBackup="true">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ImageDemo" android:exported="false" />
+        <activity android:name=".ButtonsDemo" android:exported="false" />
+        <activity android:name=".FormsDemo" android:exported="false" />
+        <activity android:name=".StacksDemo" android:exported="false" />
+        <activity android:name=".ListDemo" android:exported="false" />
+        <activity android:name=".RowsDemo" android:exported="false" />
+        <activity android:name=".BottomBarDemo" android:exported="false" />
+        <activity android:name=".MiscDemo" android:exported="false" />
+        <activity android:name=".ShotActivity" android:exported="false" />
+    </application>
+</manifest>

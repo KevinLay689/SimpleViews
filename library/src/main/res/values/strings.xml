@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Validation default messages. Consumers can override these strings in their app. -->
+<resources>
+    <string name="sv_error_required">This field is required</string>
+    <string name="sv_error_email">Please enter a valid email address</string>
+    <string name="sv_error_phone">Please enter a valid phone number</string>
+    <string name="sv_error_number">Please enter a valid number</string>
+    <string name="sv_error_min_length">Must be at least %1$d characters</string>
+</resources>

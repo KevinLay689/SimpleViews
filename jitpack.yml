@@ -1,0 +1,5 @@
+# AGP 8 requires JDK 17; JitPack defaults to JDK 8.
+jdk:
+  - openjdk17
+before_install:
+  - sdkmanager --install "platforms;android-36" > /dev/null || true

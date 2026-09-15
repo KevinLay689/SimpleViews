@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        app:svSpacing="8dp">
+
+        <com.github.simpleviews.SectionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svActionText="See all"
+            app:svTitle="Settings" />
+
+        <com.github.simpleviews.ListItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svIcon="@drawable/sv_ic_eye"
+            app:svSubtitle="Push, email and SMS"
+            app:svTitle="Notifications" />
+
+        <com.github.simpleviews.ListItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svDivider="true"
+            app:svTitle="Storage"
+            app:svValue="12 GB used" />
+
+        <com.github.simpleviews.SectionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svTitle="People" />
+
+        <com.github.simpleviews.ListItemView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svIconUrl="https://i.pravatar.cc/150?img=12"
+            app:svSubtitle="Nearby — 2 km away"
+            app:svTitle="Sam Lee" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:text="ListItemView + SectionHeader — the settings-row workhorses; taps ride the standard setOnClickListener"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

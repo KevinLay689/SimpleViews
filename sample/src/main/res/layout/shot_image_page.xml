@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.ImagePage
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:svButtonText="Get started"
+        app:svImageCornerRadius="16dp"
+        app:svImageUrl="https://picsum.photos/seed/simpleviewspage/900/500"
+        app:svText="Everything the light touches"
+        app:svCentered="true" />
+</com.github.simpleviews.SafeLayout>

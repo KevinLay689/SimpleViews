@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        app:svSpacing="8dp">
+
+        <com.github.simpleviews.SectionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svTitle="Receipt" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Subtotal"
+            app:svValue="$38.80" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Shipping"
+            app:svValue="$0.00" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Total"
+            app:svValue="$42.00" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:text="SectionHeader + KeyValueRow — label left, bold value right"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        app:svSpacing="8dp">
+
+        <com.github.simpleviews.ProfileHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svActionText="Edit"
+            app:svAvatarUrl="https://i.pravatar.cc/300?img=32"
+            app:svName="Jane Doe"
+            app:svSubtitle="Product designer" />
+
+        <com.github.simpleviews.ProfileHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svName="Placeholder" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:text="ProfileHeader — app:svAvatarUrl, svName, svSubtitle, svActionText; person placeholder when no URL"
+            android:textColor="#666666" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

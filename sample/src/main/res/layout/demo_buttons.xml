@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.VStack
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        app:svSpacing="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SimpleButton — defaults (theme accent)"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Default button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Custom fill + pill corners — no drawable XML files"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleButton
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:svExactSize="true"
+            android:text="Sign up"
+            app:svCornerRadius="24dp"
+            app:svFillColor="#6200EE" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outlined"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleButton
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:svExactSize="true"
+            android:text="Secondary action"
+            app:svCornerRadius="12dp"
+            app:svFillColor="#00000000"
+            app:svStrokeColor="#6200EE"
+            app:svStrokeWidth="1dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loading state — tap me"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.SimpleButton
+            android:id="@+id/loadingButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:svExactSize="true"
+            android:text="Submit payment" />
+    </com.github.simpleviews.VStack>
+</com.github.simpleviews.SafeLayout>

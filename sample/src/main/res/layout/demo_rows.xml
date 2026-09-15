@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.ScrollVStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:svSpacing="4dp">
+
+        <com.github.simpleviews.SectionHeader
+            android:id="@+id/peopleHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svActionText="See all"
+            app:svTitle="People" />
+
+        <com.github.simpleviews.ProfileHeader
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svActionText="Edit"
+            app:svAvatarUrl="https://i.pravatar.cc/200?img=5"
+            app:svName="Jane Doe"
+            app:svSubtitle="Product designer" />
+
+        <com.github.simpleviews.ListItemView
+            android:id="@+id/rowFriend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svIconUrl="https://i.pravatar.cc/100?img=12"
+            app:svSubtitle="Nearby — 2 km away"
+            app:svTitle="Sam Lee" />
+
+        <com.github.simpleviews.SectionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svTitle="Settings" />
+
+        <com.github.simpleviews.ListItemView
+            android:id="@+id/rowNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svIcon="@drawable/sv_ic_eye"
+            app:svSubtitle="Push, email and SMS"
+            app:svTitle="Notifications" />
+
+        <com.github.simpleviews.ListItemView
+            android:id="@+id/rowStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svDivider="true"
+            app:svTitle="Storage"
+            app:svValue="12 GB used" />
+
+        <com.github.simpleviews.SectionHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svTitle="Receipt" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Subtotal"
+            app:svValue="$38.80" />
+
+        <com.github.simpleviews.KeyValueRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svLabel="Total"
+            app:svValue="$42.00" />
+
+        <com.github.simpleviews.BannerView
+            android:id="@+id/paymentBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:svDismissible="true"
+            app:svMessage="Payment failed — tap ✕ to dismiss"
+            app:svSeverity="error" />
+
+        <com.github.simpleviews.EmptyStateView
+            android:id="@+id/emptyOrders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:svButtonText="Browse"
+            app:svMessage="Your orders will show up here"
+            app:svTitle="No orders yet" />
+    </com.github.simpleviews.ScrollVStack>
+</com.github.simpleviews.SafeLayout>

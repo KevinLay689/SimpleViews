@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.simpleviews.SafeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:svFitSystemBars="both">
+
+    <com.github.simpleviews.ScrollVStack
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        app:svSpacing="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UrlImageView with rounded corners — app:svRounded"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.UrlImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:svExactSize="true"
+            app:svLoad="https://picsum.photos/seed/simpleviews1/800/400"
+            app:svRounded="16dp"
+            app:svAlt="Random photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Circle crop — app:svCircle"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.UrlImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            app:svExactSize="true"
+            app:svLoad="https://picsum.photos/seed/simpleviews2/400/400"
+            app:svCircle="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AvatarView — circle + border, person placeholder"
+            android:textStyle="bold" />
+
+        <com.github.simpleviews.AvatarView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center_horizontal"
+            app:svExactSize="true"
+            app:svBorderWidth="3dp"
+            app:svBorderColor="#6200EE" />
+
+        <com.github.simpleviews.ImagePage
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:svImageUrl="https://picsum.photos/seed/simpleviews3/800/500"
+            app:svText="ImagePage — image + caption, one tag"
+            app:svImageCornerRadius="16dp" />
+    </com.github.simpleviews.ScrollVStack>
+</com.github.simpleviews.SafeLayout>
